@@ -1,7 +1,7 @@
-#Hero Inventory API
+#Tank Inventory API
 
 ##Deployment
--Deployed on Heroku
+-Deployed on Tankku
 
 ## Runnin on Local Machine
 -- In get all dependencies, please follow the steps below:
