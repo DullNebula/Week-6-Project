@@ -32,7 +32,7 @@ class User(db.Model, UserMixin):
     g_auth_verify = db.Column(db.Boolean, default = False)
     token = db.Column(db.String, default = '', unique = True)
     date_created = db.Column(db.DateTime, nullable = False, default = datetime.utcnow)
-    tank = db.relationship('Tank', backref = 'owner', lazy = True)
+    tank = db.relationship('Tank', backref = 'user', lazy = True)
 
     def __init__(self, email, first_name = '', last_name = '', id = '', password = '', token = '', g_auth_verify = False):
         self.id = self.set_id()
