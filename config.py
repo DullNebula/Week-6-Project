@@ -17,5 +17,6 @@ class Config():
     FLASK_APP = os.environ.get('FLASK_APP')
     FLASK_ENV = os.environ.get('FLASK_ENV')
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'YOU ARE NOT ALLOWED'
+    DEPLOY_DATABASE_URL =  os.environ.get('postgresqlhttps://dashboard.heroku.com/apps/tank-inventory')
     SQLALCHEMY_DATABASE_URI = os.environ.get('DEPLOY_DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False # Turns off update messages from sqlalchemy
